@@ -4,5 +4,5 @@
     "dockerfile": "dockerfile"
   },
   "workspaceFolder": "/home/${USER}",
-  "container_hostname": "{{ devcontainer.name }}"
+  "runArgs": ["--hostname", "${localEnv:HOSTNAME}"]
 }
